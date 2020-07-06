@@ -1,6 +1,7 @@
 Steps to execute the program:
 
 1) Execute the file HW1.py with Cranfield folder path name passed as argument.
+	
 	-If the program and the Cranfield folder are in the same directory:
 		python HW1.py ./Cranfield or
 		python3 HW1.py ./Cranfield
