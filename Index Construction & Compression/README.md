@@ -8,7 +8,9 @@ Python version used: 2.7.5(UTD csgrads1 Server), 3.7.1 (Windows 10 personal mach
 Steps to execute the program: 
 
 1. To log into csgrads1 server:
+	
 	Using unix (OSX/linux): use the 'ssh' command
+	
 	Using Windows: use an ssh client (like PuTTY).
     The full hostname for csgrads1 is: csgrads1.utdallas.edu 
     Log onto it with the UTD Netid Credentials.
@@ -16,25 +18,29 @@ Steps to execute the program:
 2. Copy ONLY the HW2.py python script from the unzipped folder onto the csgrads1 server (on your own home directory on csgrads1) (e.g. using ftp applications like FileZilla, WinSCP)
 
 3. Change the file permissions by using 'chmod' command like
+	
 	{csgrads1:~} chmod 777 HW2.py
+   
    or manually by going into properties and selecting all R,W,X for Owner,Group,Others. Refresh the directory.
 
 4. The next steps are executed to ensure correct python version and libraries are downloaded and used.
-	{csgrads1:~} unset PYTHONPATH
-	{csgrads1:~} unset PYTHONHOME
-	{csgrads1:~} python    (# python version will be displayed)
+	
+	1. {csgrads1:~} unset PYTHONPATH
+	2. {csgrads1:~} unset PYTHONHOME
+	3. {csgrads1:~} python    (# python version will be displayed)
 		>>> exit()
-
-	{csgrads1:~} pip install setuptools -U --user 		(# setuptools is to be installed for correct installation of nltk 3.4.5 for python 2.7.5 on cs1grads)
-	{csgrads1:~} pip install nltk --user			(# install nltk)
+	4. {csgrads1:~} pip install setuptools -U --user 	(# setuptools is to be installed for correct installation of nltk 3.4.5 for python 2.7.5 on cs1grads)
+	5. {csgrads1:~} pip install nltk --user			(# install nltk)
 	
 	Ignore the upgrade pip warning.
 
 5. Now execute the file HW2.py with Cranfield folder path name passed as argument on the csgrads1 server terminal.
-   	{csgrads1:~} python HW2.py '/people/cs/s/sanda/cs6322/Cranfield'
+   	
+	{csgrads1:~} python HW2.py '/people/cs/s/sanda/cs6322/Cranfield'
    
    If you have the Cranfield folder in the same directory as the location of the copied program HW2.py, then,
-   	{csgrads1:~} python HW2.py './Cranfield'
+   	
+	{csgrads1:~} python HW2.py './Cranfield'
 
 6. The stopwords and wordnet packages will be downloaded and the program will execute.
    Once its done executing, refresh your home directory.
