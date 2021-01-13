@@ -1,3 +1,8 @@
+# Ranked Retrieval Model for the index					
+**Technology: Python.<br>
+•	Created a ranked retrieval system based on vector relevance model. The scores for the ranking are computed using cosine similarity for every query-document pair.<br>
+•	Two term weighting functions are used: ‘maxtf’ and ‘Okapi’ term weighting.<br>**
+
 Resources Used: Wordnet Lemmatizer, Stopwords, Averaged_perceptron_tagger from nltk library.
 
 Files: HW3.py, Cranfield directory and hw3.queries file from directory
