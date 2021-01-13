@@ -1,3 +1,9 @@
+# Tokenization and Stemming								     
+**Technology: Python.<br>
+•	Programmed a tokenizer for the Cranfield Collection to pre-process the text and give the tokens as output.<br>
+•	Used an open-source Porter-Stemmer implementation to find stems of the tokenized Cranfield collection.<br>**
+
+
 Steps to execute the program:
 
 1) Execute the file HW1.py with Cranfield folder path name passed as argument.
