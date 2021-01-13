@@ -1,3 +1,8 @@
+# Index construction and compression							        
+**Technology: Python.<br>
+• Built two indexes from the Cranfield Collection: 1 from the dictionary of lemmas and the other from the dictionary of stems using the single pass in-memory indexing algorithm.<br>
+• Compressed both indexes: 1st one using blocked compression and gamma encoding on the index created from lemmas and the 2nd one using front coding and delta codes on the index created from stems.<br>**
+
 Resources Used: 
 	Wordnet Lemmatizer, PorterStemmer, Stopwords from nltk library
 	Pickle package for serializing and de-serializing a Python object structure so that it can be saved on disk. Pickle serializes the object (list,dict,etc.) before writing it to file. 
